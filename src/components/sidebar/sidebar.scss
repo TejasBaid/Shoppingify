@@ -1,0 +1,50 @@
+.sidebar{
+    width: 6.5vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 0%;
+    padding-top: 6vh;
+    
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+}
+.link-item{
+    
+    height: 25px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.link-item-cart{
+    
+    height: 22px;
+}
+.tooltip{
+    text-align: center;
+    
+}
+.cart{
+    
+    height: 15vh;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.cart-icon{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #F7A00C;
+}
