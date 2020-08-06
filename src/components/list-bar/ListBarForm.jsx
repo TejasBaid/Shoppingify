@@ -1,5 +1,6 @@
 import React from 'react'
 import './ListBarForm.scss'
+import {FormInput} from "../form-input/FormInput";
 
 export const ListBarForm = () => {
     return (
@@ -10,33 +11,10 @@ export const ListBarForm = () => {
             </div>
             <div className="item-form-container">
                 <form>
-                    <div className="form-input">
-                        <label className="item-label" htmlFor="name">Name</label>
-                        <div className="form-input-item">
-                            <input placeholder="Enter a name" type="text" name="name"/>
-                        </div>
-                    </div>
-                    <div className="form-input">
-                        <label className="item-label" htmlFor="name">Note</label>
-
-                        <input placeholder="Enter a note" type="textfield" name="name" className="note"/>
-
-                    </div>
-                    <div className="form-input">
-                        <label className="item-label" htmlFor="name">Image</label>
-                        <div className="form-input-item">
-                            <input placeholder="Enter a url" type="text" name="name"/>
-                        </div>
-                    </div>
-                    <div className="form-input">
-                        <label className="item-label" htmlFor="name">Category</label>
-                        <div className="form-input-item">
-                            {/* TODO: implement dropdown */}
-
-
-                            <input placeholder="Enter a category" type="text" name="name"/>
-                        </div>
-                    </div>
+                    <FormInput label="Name" placeholder="Enter a name" isNote={false} />
+                    <FormInput label="Note" placeholder="Enter a note" isNote={true} />
+                    <FormInput label="Image" placeholder="Enter a URL" isNote={false} />
+                    <FormInput label="Category" placeholder="Select a category" isNote={false} />
                 </form>
             </div>
             <div className="button-container">

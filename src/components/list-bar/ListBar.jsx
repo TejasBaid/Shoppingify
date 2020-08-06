@@ -4,6 +4,7 @@ import './ListBar.scss'
 
 import {ErrBox} from "../err-box/ErrBox";
 import {SaveInput} from "../save-input/SaveInput";
+import {ItemCounter} from "../item-counter/ItemCounter";
 
 
 export const ListBar = () => {
@@ -22,11 +23,7 @@ export const ListBar = () => {
                         <div className="sidebar-items-list">
                             <div className="tile">
                                 <div className="tile-header">Avocado</div>
-                                <div className="item-count">
-                                    <div className="add-count">+</div>
-                                    <div className="count">3 pcs</div>
-                                    <div className="subtract">-</div>
-                                </div>
+                                <ItemCounter count={5} />
                             </div>
                         </div>
                     </div>

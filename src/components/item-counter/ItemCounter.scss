@@ -1,0 +1,25 @@
+.item-count{
+  padding: 0.4vh 1vw;
+  width: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #F7A00C;
+  border-radius: 20px;
+  border: 0.7px solid #F7A00C;
+}
+.add-count{
+  font-weight: lighter;
+  font-size: 1rem;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.subtract{
+  font-weight: lighter;
+  font-size: 1.4rem;
+  &:hover{
+    cursor: pointer;
+  }
+}

@@ -1,11 +1,3 @@
-.item-form{
-  margin-right: 2vw;
-  width: 21vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 .item-form-container{
   margin-top: 3vh;
   flex: 3;
@@ -28,52 +20,15 @@
   justify-content: center;
 }
 
-.form-input{
+.item-form{
+  margin-right: 2vw;
+  width: 21vw;
+  height: 100vh;
+  display: flex;
   flex-direction: column;
-  display: flex;
+  justify-content: space-between;
 }
-.form-input-item{
-  margin-bottom: 2vh;
-  display: flex;
 
-
-  border-radius: 12px;
-  width: 20vw;
-
-
-
-}
-.item-label{
-  margin-bottom: 1vh;
-  font-size: 0.8rem;
-}
-.form-input-item input{
-  border: 2px solid #C1C1C4;
-  border-radius: 12px;
-  width: 20vw;
-  padding: 1.8vh 1vw;
-  background-color: #FAFAFE;
-
-}
-.form-input-item input:focus{
-  outline: none;
-  border-color: #F7A00C;
-}
-.note{
-  padding-top: 6vh ;
-  padding-bottom: 6vh;
-  padding-left: 1vw;
-  border: 2px solid #C1C1C4;
-  border-radius: 12px;
-  width: 19vw;
-  background-color: #FAFAFE;
-  margin-bottom: 2vh;
-
-}
-.note:focus{
-  outline: none;
-  border-color: #F7A00C;
-}
 .save-button{
   text-align: center;
   background-color: #F7A00C;

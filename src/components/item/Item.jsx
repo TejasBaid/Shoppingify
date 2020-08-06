@@ -1,9 +1,11 @@
 import React from 'react'
 import './item.scss'
-export const Item = () => {
+
+export const Item = ({name}) => {
     return (
-        <div>
-            
+        <div className="item">
+            <h3 className='item-header'>{name}</h3>
+            <h3 className="add">+</h3>
         </div>
     )
 }
