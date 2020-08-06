@@ -1,0 +1,37 @@
+.err-box{
+
+  height: 15vh;
+  border-radius: 18px;
+  color: white;
+  width: 18vw;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #80485B;
+}
+
+.df{
+  font-size: 0.9rem;
+}
+
+.bottle{
+  height: 15vh;
+
+
+}
+
+.img-box{
+  position: relative;
+  top: -2.9vh;
+  z-index: 99;
+
+}
+
+.left-panel{
+
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}

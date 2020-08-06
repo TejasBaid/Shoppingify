@@ -1,0 +1,72 @@
+.input-bar-theme{
+
+  padding-left: 1vw;
+  width: 17vw;
+  height: 6.8vh;
+  border: 2px solid #F7A00C;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  align-items: center;
+}
+
+.save-theme {
+
+  width: 5.8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  height: 100%;
+  color: white;
+  background-color: #F7A00C;
+  font-size: 0.8rem;
+
+}
+.empty-bar-input{
+
+  height: 14vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-bar{
+
+  padding-left: 1vw;
+  width: 17vw;
+  height: 6.8vh;
+  border: 2px solid #C1C1C4;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  align-items: center;
+}
+.save{
+  width: 5.8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px ;
+  height: 100%;
+  color: white;
+  background-color: #C1C1C4;
+  font-size: 0.8rem;
+
+}
+.save:hover{
+  cursor: pointer;
+}
+.add-item-input{
+  background-color: #FAFAFE;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.726);
+  font-weight: 700;
+  border: none;
+  &:focus{
+    outline: none;
+  }
+}

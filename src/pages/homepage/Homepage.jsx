@@ -7,7 +7,7 @@ import {Empty} from '../../components/list-bar/Empty'
 import {ListBarForm} from '../../components/list-bar/ListBarForm'
 
 export const Homepage = () => {
-    var ListBarType = "List"
+    var ListBarType = "Form"
     //TODO:Implement context to handle the type of sidebar list
     return (
         <div className='homepage'>

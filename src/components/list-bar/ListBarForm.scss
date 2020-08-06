@@ -1,0 +1,99 @@
+.item-form{
+  margin-right: 2vw;
+  width: 21vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item-form-container{
+  margin-top: 3vh;
+  flex: 3;
+
+}
+.form-header{
+  flex: 0.8;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.button-container{
+
+  font-size: 0.9rem;
+
+  flex: 0.9;
+  display: flex;
+  justify-content: center;
+}
+
+.form-input{
+  flex-direction: column;
+  display: flex;
+}
+.form-input-item{
+  margin-bottom: 2vh;
+  display: flex;
+
+
+  border-radius: 12px;
+  width: 20vw;
+
+
+
+}
+.item-label{
+  margin-bottom: 1vh;
+  font-size: 0.8rem;
+}
+.form-input-item input{
+  border: 2px solid #C1C1C4;
+  border-radius: 12px;
+  width: 20vw;
+  padding: 1.8vh 1vw;
+  background-color: #FAFAFE;
+
+}
+.form-input-item input:focus{
+  outline: none;
+  border-color: #F7A00C;
+}
+.note{
+  padding-top: 6vh ;
+  padding-bottom: 6vh;
+  padding-left: 1vw;
+  border: 2px solid #C1C1C4;
+  border-radius: 12px;
+  width: 19vw;
+  background-color: #FAFAFE;
+  margin-bottom: 2vh;
+
+}
+.note:focus{
+  outline: none;
+  border-color: #F7A00C;
+}
+.save-button{
+  text-align: center;
+  background-color: #F7A00C;
+  height: 3vh;
+  padding: 2vh 2vw;
+  border-radius: 10px;
+  color: white;
+  &:hover{
+  cursor: pointer;
+}
+}
+.cancel-button{
+  text-align: center;
+  height: 3vh;
+  padding: 2vh 2vw;
+  &:hover{
+    cursor: pointer;
+  }
+
+}
+
+
+

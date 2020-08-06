@@ -1,0 +1,46 @@
+
+
+.sidebar-list{
+  width: 80%;
+  margin: 4vh 0vw ;
+  flex: 2;
+  font-size: 1.2rem;
+
+  font-weight: bold;
+}
+.tile{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar-items-list{
+  padding: 5vh 0vw;
+}
+.tile-header{
+  font-size: 01rem;
+}
+.item-count{
+  padding: 0.4vh 1vw;
+  width: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #F7A00C;
+  border-radius: 20px;
+  border: 0.7px solid #F7A00C;
+}
+.add-count{
+  font-weight: lighter;
+  font-size: 1rem;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.subtract{
+  font-weight: lighter;
+  font-size: 1.4rem;
+  &:hover{
+    cursor: pointer;
+  }
+}

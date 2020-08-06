@@ -1,0 +1,35 @@
+.EmptyBar{
+    width: 21vw;
+    height: 100vh;
+    
+    
+}
+.empty-bar-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 100%;
+    height: 86vh;
+    background-color: #FEF0DE;
+}
+
+
+
+.add-item-btn{
+    background-color: white;
+    color: black;
+    width: 8vw;
+    height: 4.5vh;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 900;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
