@@ -1,13 +1,17 @@
-import React from 'react'
+import React , {useContext} from 'react'
 import './homepage.scss'
 import { Sidebar } from '../../components/sidebar/Sidebar'
 import { Center } from '../../components/centre/Center'
 import { ListBar } from '../../components/list-bar/ListBar'
 import {Empty} from '../../components/list-bar/Empty'
 import {ListBarForm} from '../../components/list-bar/ListBarForm'
+import {ListContext} from "../../context/ListContext";
+
 
 export const Homepage = () => {
-    var ListBarType = "Empty"
+    const {list,form} = useContext(ListContext)
+    console.log(list)
+    var ListBarType = form  ? "Form" : list.length === 0 ? "Empty" : "List"
     //TODO:Implement context to handle the type of sidebar list
     return (
         <div className='homepage'>

@@ -1,8 +1,10 @@
-import React from 'react'
+import React , {useContext} from 'react'
 import './ListBarForm.scss'
 import {FormInput} from "../form-input/FormInput";
+import {ListContext} from "../../context/ListContext";
 
 export const ListBarForm = () => {
+    const {setForm} = useContext(ListContext)
     return (
 
         <div className="item-form">
@@ -18,7 +20,7 @@ export const ListBarForm = () => {
                 </form>
             </div>
             <div className="button-container">
-                <div className="cancel-button">
+                <div className="cancel-button" onClick={() => setForm(false)}>
                     cancel
                 </div>
                 <div className="save-button">

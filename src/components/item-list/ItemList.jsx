@@ -2,7 +2,7 @@ import React , {useContext} from 'react'
 import './ItemList.scss'
 import {Category} from "../Category/Category";
 import {ItemContext} from "../../context/ItemContext";
-
+import uuid from 'react-uuid'
 
 export const ItemList = () => {
     const {category} = useContext(ItemContext)
@@ -10,24 +10,9 @@ export const ItemList = () => {
     return (
         <div className='item-list'>
             {category.map(cate => {
-                return <Category itemList={cate.items} />
+                return <Category key={uuid()} itemList={cate.items} />
             })}
         </div>
     )
 }
 
-// import React, {useContext} from 'react'
-// import './ItemList.scss'
-// import {ItemContextProvider} from "../../context/ItemContext";
-// // import {Category} from "../Category/Category";
-//
-//
-// export const ItemList = () => {
-//     const {category} = useContext(ItemContextProvider)
-//     console.log(category)
-//     return (
-//         <div className='item-list'>
-//
-//         </div>
-//     )
-// }
