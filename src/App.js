@@ -3,13 +3,19 @@ import './App.css';
 import {Homepage} from './pages/homepage/Homepage'
 import {ItemContextProvider} from "./context/ItemContext";
 import {ListContextProvider} from "./context/ListContext";
+import {IsSignedInProvider} from "./context/IsSignedIn";
+import {AuthContextProvider} from "./context/AuthContext";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
         <ItemContextProvider>
             <ListContextProvider>
-                <Homepage />
+                <IsSignedInProvider>
+                    <AuthContextProvider>
+                        <Homepage />
+                    </AuthContextProvider>
+                </IsSignedInProvider>
             </ListContextProvider>
         </ItemContextProvider>
     </div>
