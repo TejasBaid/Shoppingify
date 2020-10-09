@@ -5,19 +5,21 @@ export const IsSignedIn = createContext()
 
 export const IsSignedInProvider = ({children}) => {
     const [jwtToken,setJwtToken] = useState("")
+    const [isSignedIn, setIsSignedIn] = useState(false)
+
     const loadJwt = async () => {
         const jwtToken =  await cookie.load('jwtToken')
         setJwtToken(jwtToken)
-        console.log(jwtToken)
         if(jwtToken){
             setIsSignedIn(true)
+            return jwtToken
         }else{
             setIsSignedIn(false)
+            return false
         }
     }
-    const [isSignedIn, setIsSignedIn] = useState(false)
     return(
-        <IsSignedIn.Provider value={{isSignedIn,setIsSignedIn,loadJwt,setJwtToken}}>
+        <IsSignedIn.Provider value={{isSignedIn,setIsSignedIn,loadJwt,setJwtToken,jwtToken}}>
             {children}
         </IsSignedIn.Provider>
     )

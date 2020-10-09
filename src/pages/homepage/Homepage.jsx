@@ -8,14 +8,21 @@ import {Empty} from '../../components/list-bar/Empty'
 import {ListBarForm} from '../../components/list-bar/ListBarForm'
 import {ListContext} from "../../context/ListContext";
 import {IsSignedIn} from "../../context/IsSignedIn";
+import {fetchData} from "../../controller/ItemListController";
+import {ItemContext} from "../../context/ItemContext";
+import {getList} from "../../controller/ShoppingList";
 
 
 export const Homepage = () => {
     const {list,form} = useContext(ListContext)
+    const {category, setCategory} = useContext(ItemContext)
     const {isSignedIn,setIsSignedIn,loadJwt} = useContext(IsSignedIn)
-    console.log(list)
-    useEffect(() => {
-       loadJwt()
+    const {setList} = useContext(ListContext)
+    useEffect(async() => {
+       const jwtToken = await loadJwt()
+        const ShoppingList = await getList(jwtToken)
+        setList(ShoppingList)
+
     },[])
     var ListBarType = form  ? "Form" : list.length === 0 ? "Empty" : "List"
     //TODO:Implement context to handle the type of sidebar list

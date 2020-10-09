@@ -1,4 +1,4 @@
-import './auth.css'
+import './auth.scss'
 import React, {Component, useReducer, useState, useContext} from 'react'
 import {AuthContext} from "../../context/AuthContext";
 import {IsSignedIn} from "../../context/IsSignedIn";

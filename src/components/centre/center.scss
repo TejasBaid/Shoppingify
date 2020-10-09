@@ -1,4 +1,15 @@
 .center{
+    position: relative;
+    left: 6.5vw;
 
+    padding: 3vh 5vw;
+}
+.loader-center{
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 6.5vw;
     padding: 3vh 5vw;
 }

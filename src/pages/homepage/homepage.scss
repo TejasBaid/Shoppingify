@@ -5,6 +5,14 @@ body{
 }
 .homepage{
     display: grid !important;
-    grid-template-columns: 1fr 10fr 2fr !important;
+    grid-template-columns: 1fr 15fr 2fr !important;
   
+}
+.fixed{
+    position: fixed;
+}
+.list-bar-container{
+    right: 0;
+    position: fixed;
+
 }

@@ -9,7 +9,6 @@ import uuid from 'react-uuid'
 
 export const ListBar = () => {
     const {list} = useContext(ListContext)
-    console.log(list)
     return (
         <div className="list-bar">
             <div className="EmptyBar">

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+$primary-color: #9FACE6;
 * {
 	box-sizing: border-box;
 }
@@ -42,8 +43,8 @@
 
 .button {
 	border-radius: 20px;
-	border: 1px solid #8BC6EC;
-	background-color: #8BC6EC;
+	border: 1px solid $primary-color;
+	background-color: $primary-color;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -167,9 +168,8 @@
 }
 
 .overlay {
-	background: #FF416C;
 
-	background: linear-gradient(to right, #A9C9FF, #8BC6EC);
+	background-color: $primary-color;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;

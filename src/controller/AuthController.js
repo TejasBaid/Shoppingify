@@ -9,7 +9,9 @@ export const Signup = async (name,email,password) => {
         password:password,
     })
     cookie.save('jwtToken', response.data.msg, { path: '/' })
-    console.log(response.data.msg)
+    axios.defaults.headers.common = {
+        "x-auth-token":response.data.msg
+    }
     return response.status
 }
 
@@ -20,6 +22,9 @@ export const Login = async (email,password) => {
         password:password,
     })
     cookie.save('jwtToken', response.data.msg, { path: '/' })
-    console.log(response.data.msg)
+    axios.defaults.headers.common = {
+        "x-auth-token":response.data.msg
+    }
+    console.log(axios.defaults.headers)
     return response.status
 }

@@ -6,11 +6,10 @@ import uuid from 'react-uuid'
 
 export const ItemList = () => {
     const {category} = useContext(ItemContext)
-    console.log(category)
     return (
         <div className='item-list'>
             {category.map(cate => {
-                return <Category key={uuid()} itemList={cate.items} />
+                return <Category key={uuid()} name={cate.name} itemList={cate.items} />
             })}
         </div>
     )
